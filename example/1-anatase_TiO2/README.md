@@ -18,16 +18,22 @@ Folders contain:
 
 ### Result
 
-Spin density of `5-5`
+Spin density of `5-5`:
+
 ![FIG.5-5](./fig/FIG5-5.png)
 
-Spin density of `6-6`
+Spin density of `6-6`:
+
 ![FIG.6-6](./fig/FIG6-6.png)
 
-Spin density of `8-8`
+Spin density of `8-8`:
+
 ![FIG.8-8](./fig/FIG8-8.png)
 
 Fixing (7,7) and (9,9) will relax back to (5,5) and (6,6).
 
-Spin density of `no_fix`
+`=======================================================`
+
+Spin density of without occupation fix. (Both relax and SCF calculations are done without occupation fix.)
+
 ![FIG.no_fix](./fig/FIGno_fix.png)

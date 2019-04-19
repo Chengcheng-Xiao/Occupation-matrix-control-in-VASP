@@ -1,4 +1,4 @@
-Copyright (c) 2018 Prof. Graeme Watson, watsong@tcd.ie
+Copyright (c) 2019 Prof. Graeme Watson, watsong@tcd.ie
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
