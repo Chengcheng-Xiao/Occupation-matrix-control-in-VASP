@@ -4,7 +4,7 @@ Occupation matrix control sets the occupations used when calculating the DFT+U c
 
 1. To set a specific electronic occupation.
 
-2. To obtain localisation at a specific site (atom and location) and look for the minimum energy occupation.
+2. To obtain localization at a specific site (atom and location) and look for the minimum energy occupation.
 
 ## Installing
 
@@ -48,7 +48,7 @@ Example: `OCCDIR1 = 2 1 3 1 13 13 1 1.0 2 3 1 13 13 1 1.0`
           Atom 2 in POSCAR - f orbital, 1 element to set: 13-13 (f-3) up spin occupation set to 1.0
 
 
-#### (2). From `OCCMATRIX`
+#### (2). From `OCCMATRIX` file
 The file `OCCMATRIX` can be used as input for matrix control once tag `OCCEXT = 1` is set. The format of `OCCMATRIX` is similar as the output of `LDAUPRINT = 2`. See example below:
 ```
 2                                         No of atoms to be specified
@@ -86,9 +86,9 @@ spin component  1
 ```
 python extract_OCC.py [mode] [LDAUL]
 ```
-Where mode can be `with_o` or `without_o` and `LDAUL` is the exact input as in the `INCAR` file.
+Where `mode` can be `with_o` or `without_o`, `LDAUL` should be identical to the `LDAUL` tag in the `INCAR` file.
 
-This script needs `POSCAR` and `OUTCAR` files.
+This script reads `POSCAR` and `OUTCAR` files.
 
 Example:
 ```
@@ -96,7 +96,7 @@ python extract_OCC.py without_o 2 2
 ```
 Will enable output with the U imposed on first and second element's d orbitals.
 
-This script will output all matrix elements from each electronic step only if `LDAUPRINT = 2` is set in the `INCAR`. Using this output, We can visualize how the occupation matrix change with each electronic step. Or change the input of  matrix occupation based on the output of this script.
+The script will output all matrix elements from each electronic step only if `LDAUPRINT = 2` is set in the `INCAR`. Using this output, one can easily generate the input of matrix occupation file `OCCMATRIX`, or, visualize how the occupation matrix change with each electronic step.
 
 ### Procedure
 

@@ -5,7 +5,7 @@ SYSTEM = TiO2
   LWAVE = F
  LCHARG = F
 # LAECHG=T
- ISPIN=2
+# ISPIN=2
 #ICHARG=11
 #SYMPREC=0.0001
 #LELF = F
@@ -40,15 +40,15 @@ LDAUPRINT=2
 
 # 1 atom number 17, d-orbital, 1 elements, (1,1), spin-up, 1.0
 #OCCDIR1 = 1 17 2 1 5 5 1 1.0
-NELECT  = 865
+#NELECT  = 865
 
- ISYM=0
+# ISYM=0
 # LSORBIT = .TRUE.
 # ICHARG = 11      ! non selfconsistent run, read CHGCAR
  LMAXMIX = 4      ! for d elements increase LMAXMIX to 4, f: LMAXMIX = 6
 #  ! you need to set LMAXMIX already in the collinear calculation
 # SAXIS =  1  1  1   ! direction of the magnetic field
- MAGMOM = 16*0 1*1.0 91*0
+# MAGMOM = 16*0 1*1.0 91*0
 # NBANDS = 54
 # GGA_COMPAT=.FALSE.
 
